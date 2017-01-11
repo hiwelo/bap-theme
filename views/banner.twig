@@ -1,0 +1,20 @@
+{# Page header template #}
+
+<header class="banner" role="banner" id="header">
+    <nav class="banner__nav-container">
+        <div class="banner__logo">
+            {{ site.logo }}
+        </div><!-- .banner__logo -->
+        {% for nav in navigations.main %}
+            <ul class="banner__nav navigation {{ nav.slug }}">
+                {% for item in nav.get_items %}
+                    <li class="navigation__item {{ item.classes | join(' ') }}">
+                        <a class="navigation__link" href="{{ item.link }}" target="{{ item.target }}">
+                            {{ item.title }}
+                        </a><!-- .navigation__link -->
+                    </li><!-- .navigation__item -->
+                {% endfor %}
+            </ul><!-- .banner_nav -->
+        {% endfor %}
+    </nav><!-- .banner__navigation -->
+</header><!-- .banner -->

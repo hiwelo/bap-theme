@@ -1,0 +1,43 @@
+{
+    "name": "hiwelo/blog-theme",
+    "description": "Hiwelo's Blog WordPress Template",
+    "type": "wordpress-theme",
+    "homepage": "https://blog.hiwelo.co/",
+    "require": {
+        "php": ">=5.5",
+        "phpdocumentor/phpdocumentor": "^2.8",
+        "timber/timber": "^1.2"
+    },
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Damien Senger",
+            "email": "damien@raccoon.studio",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^2.5"
+    },
+    "autoload": {
+      "psr-4": {
+        "Hiwelo\\Blog\\": "./lib"
+      }
+    },
+    "scripts": {
+      "test": [
+        "./vendor/bin/phpcs --extensions=php --standard=ruleset.xml --ignore=vendor/,docs/,node_modules/ . || true",
+        "./node_modules/jshint/bin/jshint --reporter=node_modules/jshint-stylish --exclude-path=.gitignore,assets/src/fonts/ . || true"
+      ],
+      "phpcbf": [
+        "./vendor/bin/phpcbf --extensions=php --standard=ruleset.xml --ignore=vendor/,docs/,node_modules/ . || true"
+      ],
+      "documentation": [
+        "./vendor/bin/phpdoc -d . -t ./docs/api/ --ignore=vendor/,docs/,node_modules/"
+      ],
+      "work": [
+        "npm start"
+      ]
+    }
+}

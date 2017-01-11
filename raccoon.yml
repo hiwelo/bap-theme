@@ -1,0 +1,115 @@
+namespace: hiwelo
+
+theme-support:
+  title-tag: true
+  post-thumbnails: true
+  automatic-feed-links: true
+  custom-logo: true
+  post-formats:
+    - link
+    - quote
+    - audio
+    - video
+  html5:
+    - caption
+    - comment-form
+    - comment-list
+    - gallery
+    - search-form
+
+theme-features:
+  js-detection: true
+  widgets: false
+  cleanup: true
+  svg-upload: true
+
+navigations:
+  primary-left: Main navigation left
+  primary-right: Main navigation right
+  social: Social links
+
+post-types:
+  portfolio:
+    labels:
+      name: Portfolio
+      singular_name: Portfolio
+      menu_name: Portfolio
+      name_admin_bar: Portfolio
+      add_new: Ajouter
+      add_new_item: Ajouter un élément
+      new_item: Nouvel élément
+      edit_item: Éditer l'élément
+      view_item: Voir l'élément
+      all_items: Tous les éléments
+      search_items: Éléments recherchés
+      not_found: Aucun élément retrouvé
+      not_found_in_trash: Aucun élément retrouvé dans la corbeille
+    description: Portfolio de mes précédentes expériences
+    public: true
+    publicly_queryable: true
+    query_var: true
+    has_archive: true
+    rewrite:
+      slug: portfolio
+    menu_icon: dashicons-layout
+    supports:
+      - title
+      - editor
+      - thumbnail
+      - custom-fields
+      - revisions
+  conference:
+    labels:
+      name: Conférences
+      singular_name: Conférence
+      menu_name: Conférences
+      name_admin_bar: Conférence
+      add_new: Ajouter
+      add_new_item: Ajouter une nouvelle conférence
+      new_item: Nouvelle conférence
+      edit_item: Éditer la conférence
+      view_item: Voir la conférence
+      all_items: Toutes les conférences
+      search_items: Conférences recherchées
+      not_found: Aucune conférence retrouvée
+      not_found_in_trash: Aucune conférence retrouvée dans la corbeille
+    description: Présentation des différentes conférences que j'ai eu l'occasion de donner
+    public: true
+    publicly_queryable: true
+    query_var: true
+    rewrite:
+      slug: conference
+    menu_icon: dashicons-megaphone
+    supports:
+      - title
+      - editor
+      - thumbnail
+      - custom-fields
+      - revisions
+  jobs:
+    labels:
+      name: Job
+      singular_name: Job
+      menu_name: Jobs
+      name_admin_bar: Jobs
+      add_new: Ajouter
+      add_new_item: Ajouter un job
+      new_item: Nouveau job
+      edit_item: Éditer le job
+      view_item: Voir le job
+      all_items: Tous les jobs
+      search_items: Jobs recherchés
+      not_found: Aucun job retrouvé
+      not_found_in_trash: Aucun job retrouvé dans la corbeille
+    description: Liste de mes différents jobs
+    public: true
+    publicly_queryable: true
+    query_var: true
+    has_archive: true
+    rewrite:
+      slug: experiences
+    menu_icon: dashicons-nametag
+    supports:
+      - title
+      - custom-fields
+      - revisions
