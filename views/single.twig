@@ -1,0 +1,76 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+    <article class="article">
+        <header class="article__header">
+            <h1 class="article__title">{{ post.title }}</h1>
+            <p class="article__excerpt">{{ post.get_preview(50, false, false, false, false) }}</p>
+        </header><!-- .article__header -->
+        <aside class="article__aside">
+            <time class="article__date" datetime="{{ post.date | date('Y-m-d H:i') }}" pubdate>
+                {{ post.date }}
+            </time><!-- .article__date -->
+            <div class="article__comments">
+                {{ post.get_comment_count() }}
+                <span class="sr-only">{{ __('Comments') | lower }}</span>
+            </div><!-- .article__comments -->
+        </aside><!-- .article__aside -->
+        {% if post.thumbnail %}
+        <figure class="article__thumbnail">
+            <img src="{{ post.thumbnail.src }}" alt="{{ post.thumbnail.alt }}">
+            {% if post.thumbnail.caption %}
+            <figcaption>{{ post.thumbnail.caption }}</figcaption>
+            {% endif %}
+        </figure><!-- .article__thumbnail -->
+        {% endif %}
+        <div class="article__content">
+            {{ post.content }}
+        </div><!-- .article__content -->
+        <footer class="article__footer">
+            <div class="article__author author-box">
+                <div class="author-box__avatar">
+                    <img src="{{ post.author.avatar }}" alt="">
+                </div><!-- .author-box__avatar -->
+                <div class="author-box__content">
+                    <div class="author-box__name">
+                        <a href="{{ post.author.link }}">{{ post.author.name }}</a>
+                    </div><!-- .author-box__avatar -->
+                    {% if post.author.description %}
+                    <p class="author-box__description">{{ post.author.description }}</p>
+                    {% endif %}
+                </div><!-- .author-box__content -->
+            </div><!-- .article__author -->
+        </footer><!-- .article__footer -->
+    </article><!-- .article -->
+    <div class="comments">
+        {% if post.get_comment_count() %}
+        <h2 class="comments_title">{{ post.get_comment_count() }} {{ __('Comments' | lower) }}</h2>
+        {% else %}
+        <h2 class="comments_title">{{ __('Comments') }}</h2>
+        {% endif %}
+
+        {% if post.get_comment_count() %}
+        <ul class="comments__list">
+            {% for comment in post.comments %}
+            <li class="comment" data-comment-id="{{ comment.ID }}">
+                <div class="comment__avatar">
+                    Avatar
+                </div><!-- .comment__avatar -->
+                <div class="comment__container">
+                    <div class="comment__infos">
+                        <span class="comment__author">{{ comment.author.name }}</span>
+                        <time class="comment__date" datetime="{{ comment.date | date('Y-m-d H:i') }}">
+                            {{ comment.date }}
+                        </time><!-- .comment__date -->
+                    </div><!-- .comment__infos -->
+                    <div class="comment__content">
+                        {{ comment.content }}
+                    </div><!-- .commemt__content -->
+                </div><!-- .comment__container -->
+            </li><!-- .comment -->
+            {% endfor %}
+        </ul><!-- .comments__list -->
+        {% endif %}
+        {{ post.comment_form }}
+    </div><!-- .comments -->
+{% endblock %}
