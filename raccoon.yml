@@ -24,9 +24,12 @@ theme-features:
   svg-upload: true
 
 navigations:
-  primary-left: Main navigation left
-  primary-right: Main navigation right
+  blog: Blog navigation
   social: Social links
+
+contact-methods:
+    twitter: Twitter
+    github: GitHub
 
 post-types:
   portfolio:

@@ -30,8 +30,7 @@ $timber = new \Timber\Timber();
  * Context additionnal data for Timber::get_context() function
  */
 add_filter('timber_context', function ($data) {
-    $data['navigations']['main']['primaryleft'] = new TimberMenu('primary-left');
-    $data['navigations']['main']['primaryright'] = new TimberMenu('primary-right');
+    $data['navigations']['blog'] = new TimberMenu('blog');
     $data['navigations']['social'] = new TimberMenu('social');
     $data['site']->logo = get_custom_logo();
     return $data;
