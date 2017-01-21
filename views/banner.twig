@@ -1,20 +1,29 @@
 {# Page header template #}
 
 <header class="banner" role="banner" id="header">
-    <nav class="banner__nav-container">
-        <div class="banner__logo">
-            {{ site.logo }}
-        </div><!-- .banner__logo -->
-        {% for nav in navigations.main %}
-            <ul class="banner__nav navigation {{ nav.slug }}">
-                {% for item in nav.get_items %}
-                    <li class="navigation__item {{ item.classes | join(' ') }}">
-                        <a class="navigation__link" href="{{ item.link }}" target="{{ item.target }}">
-                            {{ item.title }}
-                        </a><!-- .navigation__link -->
-                    </li><!-- .navigation__item -->
-                {% endfor %}
-            </ul><!-- .banner_nav -->
+    <div class="banner__title">
+        {% if fn('is_front_page') %}
+            <h1>{{ site.name }}</h1>
+        {% else %}
+            {{ site.name }}
+        {% endif %}
+    </div><!-- .banner__title -->
+    <ul class="banner__nav navigation {{ navigations.blog.slug }}">
+        {% for item in navigations.blog.get_items %}
+            <li class="navigation__item {{ item.classes | join(' ') }}">
+                <a class="navigation__link" href="{{ item.link }}" target="{{ item.target }}">
+                    {{ item.title }}
+                </a><!-- .navigation__link -->
+            </li><!-- .navigation__item -->
         {% endfor %}
-    </nav><!-- .banner__navigation -->
+    </ul><!-- .banner_nav -->
+    <ul class="banner__nav banner__nav--social navigation {{ navigations.social.slug }}">
+        {% for item in navigations.social.get_items %}
+            <li class="navigation__item {{ item.classes | join(' ') }}">
+                <a class="navigation__link" href="{{ item.link }}" target="{{ item.target }}">
+                    {{ item.title }}
+                </a><!-- .navigation__link -->
+            </li><!-- .navigation__item -->
+        {% endfor %}
+    </ul><!-- .banner__nav -->
 </header><!-- .banner -->
