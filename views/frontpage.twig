@@ -1,7 +1,17 @@
 {% extends 'layout.twig' %}
 
 {% block content %}
-    {% for post in posts %}
-        {% include 'article-overview.twig' %}
-    {% endfor %}
+    <section class="home__articles">
+        <div class="home__article home__article--last">
+            {% include 'article-overview.twig' with {'post': last} %}
+        </div><!-- .home__article -->
+        <div class="home__article home__article--left">
+            {% include 'article-overview.twig' with {'post': left} %}
+            <button class="home__category-button">{{ meta.category_left_button }}</button>
+        </div><!-- .home__article -->
+        <div class="home__article home__article--right">
+            {% include 'article-overview.twig' with {'post': right} %}
+            <button class="home__category-button">{{ meta.category_right_button }}</button>
+        </div><!-- .home__article -->
+    </section><!-- .home__articles -->
 {% endblock %}

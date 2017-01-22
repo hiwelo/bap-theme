@@ -1,0 +1,122 @@
+{
+    "key": "group_5884f8a8c9f94",
+    "title": "Frontpage",
+    "fields": [
+        {
+            "placement": "left",
+            "endpoint": 1,
+            "key": "field_5884f8bc6c93e",
+            "label": "Featured categories",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "taxonomy": "category",
+            "field_type": "select",
+            "multiple": 0,
+            "allow_null": 0,
+            "return_format": "object",
+            "add_term": 0,
+            "load_terms": 0,
+            "save_terms": 0,
+            "key": "field_5884f8d76c93f",
+            "label": "Left category",
+            "name": "category_left",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "See other articles",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_5885113a8144a",
+            "label": "Left category button",
+            "name": "category_left_button",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "taxonomy": "category",
+            "field_type": "select",
+            "multiple": 0,
+            "allow_null": 0,
+            "return_format": "object",
+            "add_term": 0,
+            "load_terms": 0,
+            "save_terms": 0,
+            "key": "field_5884f9865f499",
+            "label": "Right category",
+            "name": "category_right",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "See other articles",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_588512d08144b",
+            "label": "Right category button",
+            "name": "category_right_button",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1485116310
+}
