@@ -1,0 +1,31 @@
+/**
+ * Navigation stylesheet
+ *
+ * @author Damien Senger <damien@raccoon.studio>
+ */
+
+.navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation__item:not(:first-child) {
+  margin-left: $column-padding;
+}
+
+.navigation__link,
+.navigation__link:visited {
+  color: $light-color;
+  font-size: $font-size-smaller;
+  letter-spacing: .1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color $transition-base;
+
+  &:hover,
+  &:focus {
+    color: $base-color;
+  }
+}

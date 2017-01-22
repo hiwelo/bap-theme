@@ -20,8 +20,8 @@ $font-size:                 1.6rem;
 $font-size-big-titles:      2.6rem;
 $font-size-med-titles:      2.2rem;
 $font-size-small-titles:    2rem;
-$font-size-smaller:         1.4rem;
-$font-size-smallest:        1.2rem;
+$font-size-smaller:         1.3rem;
+$font-size-smallest:        1.1rem;
 $line-height-body:          1.65;
 $line-height-smaller:       1.42;
 $line-height-headings:      1.2;
@@ -41,12 +41,12 @@ $font-small-ratio:          .85;
  ************************/
 
 /** Generic colors **/
-$base-color:                #424242;
+$base-color:                #222;
 $base-color-light:          #555;
 $title-color:               #111;
 $main-title-color:          #333;
 $base-color-invert:         #fff;
-$light-color:               #aaa;
+$light-color:               #999;
 $caption-color:             #999;
 
 /** Navigation colors **/
@@ -55,9 +55,9 @@ $navigation-hover-color:    $main-title-color;
 $navigation-current-color:  $title-color;
 
 /** Brand colors **/
-$primary-color:             #006e97;
-$primary-color-dark:        darken($primary-color, 10%);
-$primary-color-light:       lighten($primary-color, 10%);
+$primary-color:             #770d12;
+$primary-color-dark:        #44070a;
+$primary-color-light:       #c35055;
 $secondary-color:           #e97117;
 $secondary-color-dark:      darken($secondary-color, 10%);
 $secondary-color-light:     lighten($secondary-color, 10%);
@@ -69,7 +69,7 @@ $tertiary-color-light:      #000;
 $link-color:                $primary-color;
 $link-hover-color:          $primary-color-dark;
 $link-visited-color:        $primary-color;
-$nav-link-color:            #4b3d3d;
+$nav-link-color:            $base-color;
 
 /** Backgrounds colors **/
 $base-background:           #fff;
@@ -118,6 +118,7 @@ $radius-base:               $tiny-value;
 $radius-large:              $unit-value;
 $radius-circle:             50%;
 $container-padding:         $demi-decimal-value;
+$column-padding:            $small-plus-value;
 $section-padding:           $decimal-value;
 $sidebar-width:             20%;
 
@@ -139,10 +140,10 @@ $transition-long:           .5s ease;
 
 $container-width: (
   begin: 100%,
-  small-plus: 750px,
-  med-plus: 970px,
-  large: 1170px,
-  large-plus: 1280px
+  small-plus: 90%,
+  med-plus: 1000px,
+  large: 1200px,
+  large-plus: 1400px,
 );
 
 

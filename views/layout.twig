@@ -7,8 +7,8 @@
     {{ wp_head }}
 </head>
 <body class="{{ body_class }}">
+    {% include 'banner.twig' %}
     <div class="container">
-        {% include 'banner.twig' %}
         {% block sidebar %}{% endblock %}
         <main class="content" role="main">
             {% block content %}{% endblock %}
