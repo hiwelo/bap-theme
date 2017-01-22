@@ -1,0 +1,108 @@
+{
+    "key": "group_5883fa707c811",
+    "title": "External post",
+    "fields": [
+        {
+            "layout": "vertical",
+            "choices": {
+                "no": "No",
+                "yes": "Yes"
+            },
+            "default_value": "",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_5883fb46de3a1",
+            "label": "Is this post external?",
+            "name": "content_external",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "placeholder": "",
+            "key": "field_5883fca2de3a2",
+            "label": "Content URL",
+            "name": "content_url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5883fb46de3a1",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "301": "301 Moved Permanently",
+                "303": "303 See Other",
+                "308": "308 Permanent Redirect"
+            },
+            "default_value": [
+                301
+            ],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value",
+            "key": "field_5883ff0240994",
+            "label": "Redirection type",
+            "name": "content_redirection",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5883fb46de3a1",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1485045946
+}
