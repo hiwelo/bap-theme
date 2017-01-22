@@ -10,6 +10,13 @@
  * @link     https://codex.wordpress.org/Template_Hierarchy
  */
 
+// redirect check
+if (get_field('content_external') === 'yes') {
+    http_response_code(get_field('content_redirection'));
+    header('Location: ' . get_field('content_url'));
+    exit;
+}
+
 $context = Timber::get_context();
 
 $context['post'] = new Timber\Post();
