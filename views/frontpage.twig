@@ -1,0 +1,7 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+    {% for post in posts %}
+        {% include 'article-overview.twig' %}
+    {% endfor %}
+{% endblock %}

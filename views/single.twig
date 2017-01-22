@@ -10,10 +10,12 @@
             <time class="article__date" datetime="{{ post.date | date('Y-m-d H:i') }}" pubdate>
                 {{ post.date }}
             </time><!-- .article__date -->
-            <div class="article__comments">
+            {% if post.get_comment_count() %}
+            <span class="article__comments">
                 {{ post.get_comment_count() }}
                 <span class="sr-only">{{ __('Comments') | lower }}</span>
-            </div><!-- .article__comments -->
+            </span><!-- .article__comments -->
+            {% endif %}
         </aside><!-- .article__aside -->
         {% if post.thumbnail %}
         <figure class="article__thumbnail">
