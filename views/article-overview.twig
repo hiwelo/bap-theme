@@ -1,9 +1,9 @@
 <article class="article-overview article-overview--featured">
-    <a href="{{ post.link }}">
-        <figure class="article-overview__thumbnail">
+    <figure class="article-overview__thumbnail">
+        <a href="{{ post.link }}">
             <img src="{{ post.thumbnail.src }}" alt="{{ post.thumbnail.src }}">
-        </figure><!-- .article-overview__thumbnail -->
-    </a>
+        </a>
+    </figure><!-- .article-overview__thumbnail -->
     <header class="article-overview__header">
         <ul class="article-overview__tags">
             {% for tag in post.tags %}

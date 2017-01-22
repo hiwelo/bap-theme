@@ -5,6 +5,7 @@
  */
 
 .banner {
+  margin-bottom: $small-plus-value;
   border-bottom: $pixel-value solid rgba($main-title-color, .1);
 }
 
@@ -14,7 +15,7 @@
     align-items: center;
   margin: 0 auto;
   min-height: $demi-decimal-value;
-  padding: $tiny-value $unit-value;
+  padding: $tiny-value 0;
 }
 
 .banner__title h1 {
