@@ -23,6 +23,9 @@ theme-features:
   cleanup: true
   svg-upload: true
 
+styles:
+    blog: assets/dist/css/styles.min.css
+
 navigations:
   blog: Blog navigation
   social: Social links
