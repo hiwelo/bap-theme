@@ -9,7 +9,7 @@
                 <a href="{{ site.url }}">{{ site.name }}</a>
             {% endif %}
         </div><!-- .banner__title -->
-        <ul class="banner__nav navigation {{ navigations.blog.slug }}">
+        <ul class="banner__nav navigation {{ navigations.blog.slug }}" role="navigation" aria-label="{{ __('Main') }}">
             {% for item in navigations.blog.get_items %}
                 <li class="navigation__item {{ item.classes | join(' ') }}">
                     <a class="navigation__link" href="{{ item.link }}" target="{{ item.target }}">
@@ -18,7 +18,7 @@
                 </li><!-- .navigation__item -->
             {% endfor %}
         </ul><!-- .banner_nav -->
-        <ul class="banner__nav banner__nav--social navigation {{ navigations.social.slug }}">
+        <ul class="banner__nav banner__nav--social navigation {{ navigations.social.slug }}" role="navigation" aria-label="{{ __('Social') }}">
             {% for item in navigations.social.get_items %}
                 <li class="navigation__item {{ item.classes | join(' ') }}">
                     <a class="navigation__link" href="{{ item.link }}" target="{{ item.target }}">

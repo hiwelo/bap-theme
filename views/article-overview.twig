@@ -1,4 +1,4 @@
-<article class="article-overview article-overview--featured">
+<article class="article-overview article-overview--featured" aria-labelledby="article-{{ post.id }}">
     <figure class="article-overview__thumbnail">
         <a href="{{ post.link }}">
             <img src="{{ post.thumbnail.src }}" alt="{{ post.thumbnail.src }}">
@@ -10,7 +10,7 @@
             <li class="article-overview__tag">{{ tag }}</li>
             {% endfor %}
         </ul><!-- .article-overview__tags -->
-        <h2 class="article-overview__title">
+        <h2 class="article-overview__title" id="article-{{ post.id }}">
             <a href="{{ post.link }}">{{ post.title }}</a>
         </h2><!-- .article-overview__title -->
         <p class="article-overview__excerpt">{{ post.get_preview(50, false, false, false, false) }}</p>

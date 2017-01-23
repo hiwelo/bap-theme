@@ -1,7 +1,7 @@
 {% extends 'layout.twig' %}
 
 {% block content %}
-    <section class="home__articles">
+    <section class="home__articles" aria-label="{{ __('Last articles') }}">
         <div class="home__article home__article--last">
             {% include 'article-overview.twig' with {'post': last} %}
         </div><!-- .home__article -->

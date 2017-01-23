@@ -1,9 +1,9 @@
 {% extends 'layout.twig' %}
 
 {% block content %}
-    <article class="article">
+    <article class="article" aria-labelledby="article-{{ post.id }}">
         <header class="article__header">
-            <h1 class="article__title">{{ post.title }}</h1>
+            <h1 id="article-{{ post.id }}" class="article__title">{{ post.title }}</h1>
             <p class="article__excerpt">{{ post.get_preview(50, false, false, false, false) }}</p>
         </header><!-- .article__header -->
         <aside class="article__aside">
@@ -44,11 +44,11 @@
             </div><!-- .article__author -->
         </footer><!-- .article__footer -->
     </article><!-- .article -->
-    <div class="comments">
+    <section class="comments" role="region" aria-labelledby="comments">
         {% if post.get_comment_count() %}
-        <h2 class="comments_title">{{ post.get_comment_count() }} {{ __('Comments' | lower) }}</h2>
+        <h2 id="comments" class="comments_title">{{ post.get_comment_count() }} {{ __('Comments' | lower) }}</h2>
         {% else %}
-        <h2 class="comments_title">{{ __('Comments') }}</h2>
+        <h2 id="comments" class="comments_title">{{ __('Comments') }}</h2>
         {% endif %}
 
         {% if post.get_comment_count() %}
@@ -74,5 +74,5 @@
         </ul><!-- .comments__list -->
         {% endif %}
         {{ post.comment_form }}
-    </div><!-- .comments -->
+    </section><!-- .comments -->
 {% endblock %}
