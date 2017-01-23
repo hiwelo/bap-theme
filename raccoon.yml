@@ -26,6 +26,14 @@ theme-features:
 styles:
     blog: assets/dist/css/styles.min.css
 
+scripts:
+    vendor:
+        src: assets/dist/js/vendor.min.js
+        in_footer: true
+    global:
+        src: assets/dist/js/global.min.js
+        in_footer: true
+
 navigations:
   blog: Blog navigation
   social: Social links
