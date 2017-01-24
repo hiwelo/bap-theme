@@ -44,7 +44,7 @@
             </div><!-- .article__author -->
         </footer><!-- .article__footer -->
     </article><!-- .article -->
-    <section class="comments" role="region" aria-labelledby="comments">
+    <section class="comments" aria-labelledby="comments">
         {% if post.get_comment_count() %}
         <h2 id="comments" class="comments_title">{{ post.get_comment_count() }} {{ __('Comments' | lower) }}</h2>
         {% else %}
