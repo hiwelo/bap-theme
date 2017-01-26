@@ -29,7 +29,7 @@
     }
 
     & .article-overview__title {
-      font-size: $font-size-big-titles;
+      font-size: 3.5rem;
       text-align: center;
     }
   }
@@ -46,6 +46,11 @@
     &:focus,
     &:hover {
       opacity: .85;
+    }
+
+    & img {
+      height: auto;
+      width: 100%;
     }
   }
 }
@@ -75,7 +80,8 @@
 }
 
 .article-overview__title {
-  font-size: $font-size-small-titles;
+  font-family: DIN Next LT W04 Medium;
+  font-size: $font-size-big-titles;
   margin: 0 auto $small-value;
 
   & a {
