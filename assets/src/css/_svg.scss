@@ -1,13 +1,18 @@
 /**
  * SVG stylesheet
  *
+ * Component root element: svg
+ *
  * @author Damien Senger <damien@raccoon.studio>
  */
 
-svg.symbols {
-  display: none;
-}
 
-svg .fill-inherit {
-  fill: inherit;
+svg {
+  &.symbols {
+    display: none;
+  }
+
+  & .fill-inherit {
+    fill: inherit;
+  }
 }
