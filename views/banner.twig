@@ -3,11 +3,9 @@
 <header class="banner" id="header">
     <div class="banner__container container">
         <div class="banner__title">
-            {% if fn('is_front_page') %}
-                <h1>{{ site.name }}</h1>
-            {% else %}
-                <a href="{{ site.url }}">{{ site.name }}</a>
-            {% endif %}
+            {% if fn('is_front_page') %}<h1>{% else %}<a href="{{ site.url }}">{% endif %}
+                <img class="banner__logo" src="{{ site.theme.uri }}/assets/dist/img/bricks-pixels-logo.svg" alt="Bricks and Pixels written in a typical Amsterdamer typography" />
+            {% if fn('is_front_page') %}</h1>{% else %}</a>{% endif %}
         </div><!-- .banner__title -->
         <ul class="banner__nav navigation {{ navigations.blog.slug }}" role="navigation" aria-label="{{ __('Main') }}">
             {% for item in navigations.blog.get_items %}

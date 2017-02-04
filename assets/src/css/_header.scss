@@ -33,12 +33,19 @@
   }
 }
 
+.banner__logo,
+.banner__nav--social {
+  height: auto;
+  width: 30rem;
+}
+
 .banner__nav.navigation {
   display: none;
 
   @include breakpoint('tiny-plus') {
     &.banner__nav--social {
       display: flex;
+      justify-content: flex-end;
     }
   }
 

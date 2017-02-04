@@ -19,8 +19,10 @@
 
 
 /**
- * Project's mixins
+ * Project's generic stylesheets
  */
+@import "generic";
+@import "svg";
 @import "typography";
 
 
