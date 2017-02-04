@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="210px" height="60px" viewBox="0 0 210 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Amsterdam crosses</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M42.7724726,30.2941176 L55.2508276,17.8157627 L42.7724726,5.33740772 L30.2941176,17.8157627 L17.8157627,5.33740772 L5.33740772,17.8157627 L17.8157627,30.2941176 L5.33740772,42.7724726 L17.8157627,55.2508276 L30.2941176,42.7724726 L42.7724726,55.2508276 L55.2508276,42.7724726 L42.7724726,30.2941176 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-3" y="-3" width="55.9134198" height="55.9134198">
+            <rect x="2.33740772" y="2.33740772" width="55.9134198" height="55.9134198" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+        <path d="M117.478355,30.2941176 L129.95671,17.8157627 L117.478355,5.33740772 L105,17.8157627 L92.521645,5.33740772 L80.0432901,17.8157627 L92.521645,30.2941176 L80.0432901,42.7724726 L92.521645,55.2508276 L105,42.7724726 L117.478355,55.2508276 L129.95671,42.7724726 L117.478355,30.2941176 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-3" y="-3" width="55.9134198" height="55.9134198">
+            <rect x="77.0432901" y="2.33740772" width="55.9134198" height="55.9134198" fill="white"></rect>
+            <use xlink:href="#path-3" fill="black"></use>
+        </mask>
+        <path d="M192.184237,30.2941176 L204.662592,17.8157627 L192.184237,5.33740772 L179.705882,17.8157627 L167.227527,5.33740772 L154.749172,17.8157627 L167.227527,30.2941176 L154.749172,42.7724726 L167.227527,55.2508276 L179.705882,42.7724726 L192.184237,55.2508276 L204.662592,42.7724726 L192.184237,30.2941176 Z" id="path-5"></path>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-3" y="-3" width="55.9134198" height="55.9134198">
+            <rect x="151.749172" y="2.33740772" width="55.9134198" height="55.9134198" fill="white"></rect>
+            <use xlink:href="#path-5" fill="black"></use>
+        </mask>
+    </defs>
+    <style type="text/css">
+        [id="cross"] .crosses-color {
+            fill: #ddd;
+            fill-rule: evenodd
+        }
+
+        [id="cross"] .crosses-stroke {
+            stroke: #fff;
+        }
+    </style>
+    <g id="Page-1" stroke="none" stroke-width="3" fill="none" fill-rule="evenodd">
+        <g id="Amsterdam-crosses" fill-rule="nonzero">
+            <g id="cross">
+                <use class="crosses-color" xlink:href="#path-1"></use>
+                <use class="crosses-stroke" mask="url(#mask-2)" stroke-width="15" xlink:href="#path-1"></use>
+            </g>
+            <g id="cross">
+                <use class="crosses-color" xlink:href="#path-3"></use>
+                <use class="crosses-stroke" mask="url(#mask-4)" stroke-width="15" xlink:href="#path-3"></use>
+            </g>
+            <g id="cross">
+                <use class="crosses-color" xlink:href="#path-5"></use>
+                <use class="crosses-stroke" mask="url(#mask-6)" stroke-width="15" xlink:href="#path-5"></use>
+            </g>
+        </g>
+    </g>
+</svg>
