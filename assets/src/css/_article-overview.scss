@@ -49,11 +49,6 @@
     & a {
       transition: opacity $transition-long;
 
-      &:focus,
-      &:hover {
-        opacity: .85;
-      }
-
       & img {
         height: auto;
         width: 100%;
