@@ -10,8 +10,9 @@
  ******************************************/
 
 /** Font stacks **/
-$font-headings:             DIN Next LT W04 Medium, Helvetica, sans-serif;
+$font-headings:             "DIN Next W04", Helvetica, sans-serif;
 $font-body:                 -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+$font-content:              'Merriweather', Georgia, Cambria, "Times New Roman", Times, serif;
 $font-code:                 Courier, monospace;
 $font-quotes:               Garamont, serif;
 
@@ -113,6 +114,7 @@ $xxl-plus-value:            18rem;
 $double-decimal-value:      20rem;
 $container-medium-value:    55rem;
 $container-large-value:     65rem;
+$container-content-value:   75rem;
 
 /** Project custom spacings **/
 $border-size:               $small-plus-value;

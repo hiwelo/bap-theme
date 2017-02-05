@@ -29,11 +29,33 @@
     }
   }
 
+  &__content {
+    margin: $medium-value auto;
+    font-size: 1.8rem;
+
+    & p {
+      margin: 0 auto 1.6em;
+      max-width: 90%;
+
+      @include breakpoint('med') {
+        max-width: $container-content-value;
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: $demi-decimal-value;
+  }
+
   &__header {
     margin: $xl-value auto $small-value;
   }
 
   &__thumbnail {
-    margin: 0 auto $large-value;
+    margin: 0 auto $medium-value;
+  }
+
+  &__title {
+    font-weight: 500;
   }
 }

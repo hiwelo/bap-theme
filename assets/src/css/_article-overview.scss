@@ -21,6 +21,12 @@
     }
   }
 
+  &__comments {
+    &::before {
+      content: '•';
+    }
+  }
+
   &__excerpt {
     margin: auto;
     margin-bottom: $small-value;
@@ -90,6 +96,7 @@
     color: $title-color;
     font-family: $font-headings;
     font-size: $font-size-big-titles;
+    font-weight: 500;
     margin: 0 auto $small-value;
 
     & a {
