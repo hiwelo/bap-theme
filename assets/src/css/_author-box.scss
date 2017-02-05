@@ -8,5 +8,44 @@
 
 
 .author-box {
+  display: flex;
+    align-items: center;
+  margin: 0 auto;
+  max-width: $container-small-value;
 
+  &__avatar {
+    display: block;
+    height: $decimal-value;
+    margin-right: $small-plus-value;
+    width: $decimal-value;
+    border-radius: $radius-circle;
+    overflow: hidden;
+
+    & img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    color: $light-color;
+    font-family: $font-body;
+  }
+
+  &__name {
+    margin-bottom: $tiny-value;
+    @extend .h3-like;
+
+    & a {
+      color: inherit;
+      text-decoration: none;
+      transition: color $transition-base;
+
+      &:focus,
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
 }

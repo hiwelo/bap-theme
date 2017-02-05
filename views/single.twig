@@ -35,7 +35,7 @@
                 </div><!-- .author-box__avatar -->
                 <div class="author-box__content">
                     <div class="author-box__name">
-                        <a href="{{ post.author.link }}">{{ post.author.name }}</a>
+                        <a href="{{ post.author.link }}">{{ __('Written by') }} {{ post.author.name }}</a>
                     </div><!-- .author-box__avatar -->
                     {% if post.author.description %}
                     <p class="author-box__description">{{ post.author.description }}</p>
