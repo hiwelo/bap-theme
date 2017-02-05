@@ -17,6 +17,29 @@
     display: none;
   }
 
+  &__excerpt {
+    margin: auto;
+    margin-bottom: $small-value;
+    max-width: $container-medium-value;
+    text-align: center;
+
+    @include breakpoint('med-plus') {
+      display: block;
+    }
+  }
+
+  &__infos {
+    justify-content: center;
+    color: $light-color;
+    font-size: $font-size-smaller;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+
+    @include breakpoint('med-plus') {
+      display: flex;
+    }
+  }
+
   &__header {
     flex: 1;
   }
@@ -31,6 +54,16 @@
     &:not(:first-child) {
       margin-left: $small-value;
     }
+
+    & a {
+      color: inherit;
+      text-decoration: none;
+
+      &:focus,
+      &:hover {
+        color: $primary-color;
+      }
+    }
   }
 
   &__tags {
@@ -38,6 +71,7 @@
     margin: 0;
     margin-bottom: $tiny-plus-value;
     padding: 0;
+    color: $base-color-light;
     list-style: none;
   }
 
@@ -57,7 +91,8 @@
   }
 
   &__title {
-    font-family: DIN Next LT W04 Medium;
+    color: $title-color;
+    font-family: $font-headings;
     font-size: $font-size-big-titles;
     margin: 0 auto $small-value;
 
@@ -78,9 +113,11 @@
  * Homepage first article overview block specific styles
  */
 
-.home .article-overview:first-of-type {
+.home__article--last .article-overview {
   flex-direction: column;
   margin-bottom: $medium-plus-value;
+  padding-bottom: $medium-value;
+  border-bottom: $border-light;
 
   & .article-overview {
     &__header {
@@ -99,8 +136,12 @@
     }
 
     &__title {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       text-align: center;
+
+      @include breakpoint('med-plus') {
+        font-size: 3.5rem;
+      }
     }
   }
 }

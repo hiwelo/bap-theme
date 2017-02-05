@@ -10,7 +10,7 @@
  ******************************************/
 
 /** Font stacks **/
-$font-headings:             DIN Next W01 Regular, Helvetica, sans-serif;
+$font-headings:             DIN Next LT W04 Medium, Helvetica, sans-serif;
 $font-body:                 Lato, system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 $font-code:                 Courier, monospace;
 $font-quotes:               Garamont, serif;
@@ -20,6 +20,7 @@ $font-size:                 1.6rem;
 $font-size-big-titles:      2.6rem;
 $font-size-med-titles:      2.2rem;
 $font-size-small-titles:    2rem;
+$font-size-small-text:      1.5rem;
 $font-size-smaller:         1.3rem;
 $font-size-smallest:        1.2rem;
 $line-height-body:          1.65;
@@ -46,8 +47,8 @@ $base-color-light:          #555;
 $title-color:               #111;
 $main-title-color:          #333;
 $base-color-invert:         #fff;
-$light-color:               #999;
-$caption-color:             #999;
+$light-color:               #888;
+$caption-color:             #888;
 
 /** Navigation colors **/
 $navigation-color:          $light-color;
@@ -55,7 +56,7 @@ $navigation-hover-color:    $main-title-color;
 $navigation-current-color:  $title-color;
 
 /** Brand colors **/
-$primary-color:             #770d12;
+$primary-color:             #cc0000;
 $primary-color-dark:        #44070a;
 $primary-color-light:       #c35055;
 $secondary-color:           #e97117;
@@ -110,6 +111,7 @@ $xl-plus-value:             14rem;
 $xxl-value:                 16rem;
 $xxl-plus-value:            18rem;
 $double-decimal-value:      20rem;
+$container-medium-value:    55rem;
 
 /** Project custom spacings **/
 $border-size:               $small-plus-value;
@@ -132,6 +134,13 @@ $codeblock-maxheight:       $double-decimal-value;
 
 $transition-base:           .2s ease;
 $transition-long:           .5s ease;
+
+
+/***********
+ * Borders *
+ ***********/
+
+$border-light:              $pixel-value solid rgba($main-title-color, .1);
 
 
 /*******************

@@ -10,7 +10,7 @@
 .banner {
   position: relative;
   margin-bottom: $medium-value;
-  border-bottom: $pixel-value solid rgba($main-title-color, .1);
+  border-bottom: $border-light;
 
   &::after {
     position: absolute;
