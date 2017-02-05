@@ -22,7 +22,7 @@
     </defs>
     <style type="text/css">
         [id="cross"] .crosses-color {
-            fill: #ddd;
+            fill: #fdd;
             fill-rule: evenodd
         }
 
