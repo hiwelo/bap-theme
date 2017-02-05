@@ -19,16 +19,16 @@
 
   &__link,
   &__link:visited {
-    color: $light-color;
+    color: $base-color;
     font-size: $font-size-smaller;
     letter-spacing: .1em;
     text-decoration: none;
     text-transform: uppercase;
-    transition: color $transition-base;
+    transition: opacity $transition-base;
 
     &:hover,
     &:focus {
-      color: $base-color;
+      opacity: .75;
     }
   }
 }

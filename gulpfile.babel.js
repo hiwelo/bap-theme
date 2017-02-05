@@ -74,7 +74,7 @@ const paths = {
     },
     scripts: './assets/src/js/*.js',
     images: './assets/src/img/*.{png,jpg,jpeg,gif,svg}',
-    fonts: './assets/src/fonts/*.{woff,woff2}',
+    fonts: './assets/src/fonts/*.{woff,woff2,ttf}',
     icons: './assets/src/icons/*.svg',
   },
   vendors: './node_modules',

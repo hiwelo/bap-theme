@@ -19,9 +19,7 @@
         <ul class="banner__nav banner__nav--social navigation {{ navigations.social.slug }}" role="navigation" aria-label="{{ __('Social') }}">
             {% for item in navigations.social.get_items %}
                 <li class="navigation__item {{ item.classes | join(' ') }}">
-                    <a class="navigation__link" href="{{ item.link }}" target="{{ item.target }}">
-                        {{ item.title }}
-                    </a><!-- .navigation__link -->
+                    <a class="navigation__link" href="{{ item.link }}" target="{{ item.target }}">{{ item.title| lower }}</a>
                 </li><!-- .navigation__item -->
             {% endfor %}
         </ul><!-- .banner__nav -->

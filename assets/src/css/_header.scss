@@ -56,6 +56,12 @@
         display: flex;
       }
     }
+
+    &--social .menu-item:not(.menu-lang) .navigation__link {
+      color: $base-color;
+      font-size: 1.8rem;
+      @extend .socialicon;
+    }
   }
 
   &__title {
