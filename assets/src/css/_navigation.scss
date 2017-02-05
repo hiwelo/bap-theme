@@ -24,11 +24,11 @@
     letter-spacing: .1em;
     text-decoration: none;
     text-transform: uppercase;
-    transition: opacity $transition-base;
+    transition: color $transition-base;
 
     &:hover,
     &:focus {
-      opacity: .75;
+      color: $error-color;
     }
   }
 }

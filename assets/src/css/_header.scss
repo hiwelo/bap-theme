@@ -61,6 +61,11 @@
       color: $base-color;
       font-size: 1.8rem;
       @extend .socialicon;
+
+      &:focus,
+      &:hover {
+        color: $error-color;
+      }
     }
   }
 
