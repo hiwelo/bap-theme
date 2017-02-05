@@ -28,17 +28,26 @@
 
   &__container {
     display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
     margin: 0 auto;
     min-height: $demi-decimal-value;
     padding: $tiny-value 0;
+
+    @include breakpoint('tiny-plus') {
+      justify-content: space-between;
+    }
   }
 
   &__logo,
   &__nav--social {
     height: auto;
     width: 30rem;
+  }
+
+  &__logo {
+    margin: $tiny-plus-value 0;
+    vertical-align: middle;
   }
 
   &__nav {
