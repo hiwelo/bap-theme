@@ -3,3 +3,14 @@
  *
  * @author Damien Senger <damien@raccoon.studio>
  */
+
+
+figure {
+  margin: $medium-value auto $large-value;
+
+  & figcaption {
+    color: $caption-color;
+    font-size: $font-size-smaller;
+    text-align: center;
+  }
+}

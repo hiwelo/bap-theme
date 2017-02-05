@@ -1,0 +1,39 @@
+/**
+ * Article component stylesheet
+ *
+ * Component root selector: .article
+ *
+ * @author Damien Senger <damien@raccoon.studio>
+ */
+
+
+.article {
+  &__aside,
+  &__header {
+    max-width: $container-large-value;
+    text-align: center;
+  }
+
+  &__aside {
+    margin: $small-value auto $decimal-value;
+    color: $light-color;
+    font-size: $font-size-smaller;
+    letter-spacing: .15em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__comments {
+    &::before {
+      content: '•';
+    }
+  }
+
+  &__header {
+    margin: $xl-value auto $small-value;
+  }
+
+  &__thumbnail {
+    margin: 0 auto $large-value;
+  }
+}

@@ -47,8 +47,8 @@ $base-color-light:          #555;
 $title-color:               #111;
 $main-title-color:          #333;
 $base-color-invert:         #fff;
-$light-color:               #888;
-$caption-color:             #888;
+$light-color:               rgba(0, 0, 0, .6);
+$caption-color:             $light-color;
 
 /** Navigation colors **/
 $navigation-color:          $light-color;
@@ -112,6 +112,7 @@ $xxl-value:                 16rem;
 $xxl-plus-value:            18rem;
 $double-decimal-value:      20rem;
 $container-medium-value:    55rem;
+$container-large-value:     65rem;
 
 /** Project custom spacings **/
 $border-size:               $small-plus-value;
