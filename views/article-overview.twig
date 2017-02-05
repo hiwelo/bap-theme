@@ -1,7 +1,7 @@
 <article class="article-overview article-overview--featured" aria-labelledby="article-{{ post.id }}">
     <figure class="article-overview__thumbnail">
         <a href="{{ post.link }}">
-            <img src="{{ post.thumbnail.src }}" alt="{{ post.thumbnail.src }}">
+            <img src="{{ post.thumbnail.src('article-overview') }}" alt="{{ post.thumbnail.alt }}">
         </a>
     </figure><!-- .article-overview__thumbnail -->
     <header class="article-overview__header">

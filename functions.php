@@ -35,3 +35,8 @@ add_filter('timber_context', function ($data) {
     $data['site']->logo = get_custom_logo();
     return $data;
 });
+
+/**
+ * Custom image sizes
+ */
+add_image_size('article-overview', 1400, 900, true);
