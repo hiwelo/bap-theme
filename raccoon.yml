@@ -41,3 +41,36 @@ navigations:
 contact-methods:
     twitter: Twitter
     flickr: Flickr
+
+post-types:
+    talks:
+        labels:
+            name: Talks
+            singular_name: Talk
+            menu_name: Talks
+            name_admin_bar: Talk
+            add_new: Add New
+            add_new_item: Add New Talk
+            new_item: New Talk
+            edit_item: Edit Talk
+            view_item: View Talk
+            all_items: All Talks
+            search_items: Search Talks
+            not_found: No Talks found.
+            not_found_in_trash: No Talks found in Trash.
+        description: Talks given in Web events
+        public: true
+        publicly_queryable: true
+        query_var: true
+        has_archive: true
+        hierarchical: false
+        rewrite:
+            slug: talks
+            with_front: false
+        menu_icon: dashicons-megaphone
+        menu_position: 20
+        supports:
+            - title
+            - editor
+            - thumbnail
+            - excerpt
